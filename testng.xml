@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jenkins Maven Integration Tests" thread-count="5" parallel="tests">
+    <!-- Add the location where the project is stored in your machine -->
+    <test verbose="2" preserve-order="true" name="To Do App Test">
+        <classes>
+            <class name="org.example.CrossBrowserTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.example.GoogleSearchTest"/>
+    </listeners>
+ 
+    <test name="Google Search Test - 1">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="87.0"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="resolution" value="1920x1080"/>
+        <classes>
+            <class name="org.example.GoogleSearchTest"/>
+        </classes>
+    </test>
+ 
+</suite>
