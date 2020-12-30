@@ -38,7 +38,8 @@ public class CrossBrowserTest {
         capabilities.setCapability("console",true);
         capabilities.setCapability("visual",true);
  
-        driver = new RemoteWebDriver(new URL("http://" + username + ":" + access_key + "@hub.lambdatest.com/wd/hub"), capabilities);
+       // driver = new RemoteWebDriver(new URL("http://" + username + ":" + access_key + "@hub.lambdatest.com/wd/hub"), capabilities);
+          driver = new RemoteWebDriver(new URL("https://lambdatest.github.io/sample-todo-app/"), capabilities);
         System.out.println("Started session");
     }
  
