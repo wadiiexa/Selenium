@@ -16,8 +16,10 @@ public class CrossBrowserTest {
     WebDriver driver = null;
     String URL = "https://lambdatest.github.io/sample-todo-app/";
     public static String status = "passed";
-    String username = "user-name";
-    String access_key = "access-key";
+    //String username = "user-name";
+   // String access_key = "access-key";
+   String username = "essid";
+   String access_key = "XCPpq.HS9G2L$sR";
  
     @BeforeClass
     public void testSetUp() throws MalformedURLException {
