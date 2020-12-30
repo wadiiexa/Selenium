@@ -23,9 +23,10 @@ public class GoogleSearchTest implements IExecutionListener {
     WebElement search_box;
     String exp_title = "Most Powerful Cross Browser Testing Tool Online | LambdaTest";
     public static String status = "passed";    
-    public static String username = "user-name";
-    public static String access_key = "access-key";
- 
+    //public static String username = "user-name";
+    //public static String access_key = "access-key";
+     public static String username = "essid";
+     public static String access_key = "XCPpq.HS9G2L$sR";
     @Override
     public void onExecutionStart() {
         System.out.println("onExecutionStart");
