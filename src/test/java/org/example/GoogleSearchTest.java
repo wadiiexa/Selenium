@@ -52,7 +52,8 @@ public class GoogleSearchTest implements IExecutionListener {
         capabilities.setCapability("visual",true);
  
         try {
-            driver = new RemoteWebDriver(new URL("http://" + username + ":" + access_key + "@hub.lambdatest.com/wd/hub"), capabilities);
+            //driver = new RemoteWebDriver(new URL("http://" + username + ":" + access_key + "@hub.lambdatest.com/wd/hub"), capabilities);
+         driver = new RemoteWebDriver(new URL("https://lambdatest.github.io/sample-todo-app/"), capabilities);
         } catch (MalformedURLException e) {
             System.out.println("Invalid grid URL");
         }
